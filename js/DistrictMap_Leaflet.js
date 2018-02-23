@@ -515,7 +515,7 @@ DistrictMap_Leaflet.prototype = {
           if (self.searchControl === undefined) {
             self.searchControl = new L.Control.Search({
               //container: 'findbox',
-              textPlaceholder: 'Locate Village...',
+              textPlaceholder: 'Locate Sub District...',
               collapsed: false,
               //position: 'topright',
               layer: self.choroLayer,
