@@ -193,7 +193,7 @@ var categorical_variables = [
 ];
 
 var census_grouped_variables = {
-  'Water Quality': [{ name: 'Test' }],
+  'Water Quality': [{ name: 'Fluoride,2017-18(mg/L)' }],
   'Census Code': [
     { name: 'District Code' },
     { name: 'Sub District Code' },

@@ -175,6 +175,7 @@ DistrictMap_Leaflet.prototype = {
       div.innerHTML += '<br> <i style="background:#000"></i> Data NA <br>';
       return;
     }
+
     if (categorical_variables.indexOf(this.field_name) !== -1) {
       // loop through our density intervals and generate a label with a colored square for each interval
       for (var i = 0; i < grades.length; i++) {
@@ -262,9 +263,9 @@ DistrictMap_Leaflet.prototype = {
     if (max <= 10) {
       return perc >= 0.8
         ? '#f03b20'
-        : perc > 0.4
+        : perc >= 0.4
           ? '#feb24c'
-          : perc > 0.1 ? '#ffeda0' : perc === -1 ? '#000' : '#000';
+          : perc >= 0 ? '#ffeda0' : perc === -1 ? '#000' : '#000';
     }
 
     return perc >= 0.8
